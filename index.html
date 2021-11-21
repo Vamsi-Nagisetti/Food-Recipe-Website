@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href ="style.css">
+  
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+    <title>Food Recipe</title>
+  </head>
+  <body class="bg-dark">
+    
+       
+    <form class="bg-dark mb-3 mt-3 pt-3 " style ="align-items: center; text-align: center; border-radius: 21px;" id = "form">
+      <input type="search" placeholder="Search" aria-label="Search" style="border-radius: 21px;" class="searchForm" id="bar">
+      <button class="btn btn-success" type="submit" style="border-radius: 21px; " >
+        <i class="bi bi-search"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+        Search</button>
+    </form>
+    <div class="loading" id="anim2">
+
+    </div>
+    <div class="cards bg-dark ml-3" id ="de">
+       
+      <div class="cards__item ml-3">
+       
+          
+      </div>
+  
+      
+  </div>
+  <div class="vid" id="videoPop" >
+    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog " id="crd">
+        
+         
+           <div class="modal-content bg-dark"  id="crd">
+             <div class="modal-footer bg-dark" id="crd">
+              
+              
+            <button type="button" data-bs-dismiss="modal"  class="btn-close btn-close-white" aria-label="Close" onclick="closeVideo()" id="x"><i class="fas fa-times-circle"></i></button>
+          </div>
+          <div class="modal-body bg-dark" id ="videopop" style="border-radius: 21px;">
+        
+          </div>
+          
+          
+        
+        
+      </div>
+    </div>
+  </div>
+  </div>
+  <div id="anim"></div>
+  <div id="demo1">
+    
+  </div>
+  
+    
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></scrip>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src ="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.12/lottie.min.js" 
+        integrity="sha512-Dr2QERtNqLw0I06FR7G73CjiWvR4roRMDNTbOGp+qeGhVjEl0xs4AKZzqVFREqdOL3t8ei7H9y9XUcpYVkwEIQ=="
+         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <script src ="animate.js">
+
+         </script>
+         <script>
+           document.getElementById("anim").style.display ="none";
+           document.querySelector("#de").style.display ="none";
+           
+         </script>
+  </body>
+</html>
